@@ -8,6 +8,13 @@ public class Grade {
     private String name;
     private Double grade;
 
+    public Grade() {};
+
+    public Grade(Long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     public Long getId() {
         return id;
     }

@@ -10,6 +10,15 @@ public class IC {
     private GradeSystem gradeSystem;
     private Set<Student> students;
 
+
+    public IC() {};
+
+    public IC(Integer id, Integer year, GradeSystem gradeSystem) {
+        this.id = id;
+        this.year = year;
+        this.gradeSystem = gradeSystem;
+    }
+
     public Integer getId() {
         return id;
     }

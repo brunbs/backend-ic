@@ -8,6 +8,13 @@ public class GradeSystem {
     private Integer id;
     private Set<Grade> grades;
 
+    public GradeSystem(){};
+
+    public GradeSystem(Integer id, Set<Grade> grades) {
+        this.id = id;
+        this.grades = grades;
+    }
+
     public Integer getId() {
         return id;
     }

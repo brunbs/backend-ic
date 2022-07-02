@@ -9,6 +9,13 @@ public class Student {
     private String name;
     private Set<IC> icParticipations;
 
+    public Student() {};
+
+    public Student(Long registration, String name) {
+        this.registration = registration;
+        this.name = name;
+    }
+
     public Long getRegistration() {
         return registration;
     }
