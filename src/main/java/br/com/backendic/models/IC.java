@@ -1,14 +1,13 @@
 package br.com.backendic.models;
 
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 public class IC {
 
     private Integer id;
     private Integer year;
     private GradeSystem gradeSystem;
-    private Set<Student> students;
+    private List<Student> students = new ArrayList<>();
 
 
     public IC() {};
@@ -43,11 +42,11 @@ public class IC {
         this.gradeSystem = gradeSystem;
     }
 
-    public Set<Student> getStudents() {
+    public List<Student> getStudents() {
         return students;
     }
 
-    public void setStudents(Set<Student> students) {
+    public void setStudents(List<Student> students) {
         this.students = students;
     }
 

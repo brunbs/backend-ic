@@ -1,13 +1,12 @@
 package br.com.backendic.models;
 
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 public class Student {
 
     private Long registration;
     private String name;
-    private Set<IC> icParticipations;
+    private List<IC> icParticipations = new ArrayList<>();
 
     public Student() {};
 
@@ -32,11 +31,11 @@ public class Student {
         this.name = name;
     }
 
-    public Set<IC> getIcParticipations() {
+    public List<IC> getIcParticipations() {
         return icParticipations;
     }
 
-    public void setIcParticipations(Set<IC> icParticipations) {
+    public void setIcParticipations(List<IC> icParticipations) {
         this.icParticipations = icParticipations;
     }
 

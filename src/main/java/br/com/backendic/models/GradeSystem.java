@@ -1,16 +1,15 @@
 package br.com.backendic.models;
 
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 public class GradeSystem {
 
     private Integer id;
-    private Set<Grade> grades;
+    private List<Grade> grades = new ArrayList<>();
 
     public GradeSystem(){};
 
-    public GradeSystem(Integer id, Set<Grade> grades) {
+    public GradeSystem(Integer id, List<Grade> grades) {
         this.id = id;
         this.grades = grades;
     }
@@ -23,11 +22,11 @@ public class GradeSystem {
         this.id = id;
     }
 
-    public Set<Grade> getGrades() {
+    public List<Grade> getGrades() {
         return grades;
     }
 
-    public void setGrades(Set<Grade> grades) {
+    public void setGrades(List<Grade> grades) {
         this.grades = grades;
     }
 
