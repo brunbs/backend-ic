@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @RestController
-@RequestMapping(value="/grade-system")
+@RequestMapping(value="/grade-systems")
 public class GradeSystemController {
 
     @GetMapping
