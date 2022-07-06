@@ -1,10 +1,12 @@
 package br.com.backendic.models;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.*;
 @Entity
 @Table(name="grade_system")
-public class GradeSystem {
+public class GradeSystem implements Serializable {
+    private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -13,7 +15,7 @@ public class GradeSystem {
 
     private String description;
 
-    @ManyToMany(cascade = {CascadeType.ALL}, fetch = FetchType.EAGER)
+    @ManyToMany(cascade = {CascadeType.MERGE}, fetch = FetchType.EAGER)
     @JoinTable(
             name = "GradeSystem_Grade",
             joinColumns = { @JoinColumn(name = "grade_system_id") },
