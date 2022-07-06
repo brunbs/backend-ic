@@ -39,6 +39,18 @@ public class Student {
         this.icParticipations = icParticipations;
     }
 
+    public void addIcParticipation(IC ic) {
+        icParticipations.add(ic);
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "registration=" + registration +
+                ", name='" + name + '\'' +
+                '}';
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

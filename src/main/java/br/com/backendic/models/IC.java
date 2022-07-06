@@ -50,6 +50,20 @@ public class IC {
         this.students = students;
     }
 
+    public void addStudents(Student student) {
+        students.add(student);
+    }
+
+    @Override
+    public String toString() {
+        return "IC{" +
+                "id=" + id +
+                ", year=" + year +
+                ", gradeSystem=" + gradeSystem +
+                ", students=" + students +
+                '}';
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
